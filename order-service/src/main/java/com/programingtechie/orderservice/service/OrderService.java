@@ -42,7 +42,7 @@ public class OrderService {
         // Call inventory Service, and place order if producsdasda is in
         // Stock
         InventoryResponse[] inventoryResponsesArr = webClient.get()
-                .uri("http://localhost:8083/api/inventory?",
+                .uri("http://localhost:8083/api/inventory",
 //                .uri("http://localhost:8083/api/inventory?skuCode=iphone_13_red&skuCode=iphone_13")
                         uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
                 .retrieve()
@@ -53,19 +53,21 @@ public class OrderService {
                 .allMatch(InventoryResponse::isInStock);
 
         System.out.println(skuCodes);
-        System.out.println(allProductsInStock);
+//        System.out.println(allProductsInStock);
 
         if (allProductsInStock) {
             orderRepository.save(order);
         } else {
             throw new IllegalArgumentException("Product is not in stock, please try again later");
         }
+
     }
 
     private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto) {
         OrderLineItems orderLineItems = new OrderLineItems();
         orderLineItems.setPrice(orderLineItemsDto.getPrice());
-        orderLineItems.setQuantity(orderLineItems.getQuantity());
+        orderLineItems.setQuantity(orderLineItemsDto.getQuantity());
+        orderLineItems.setSkuCode(orderLineItemsDto.getSkuCode());
         return orderLineItems;
     }
 }
