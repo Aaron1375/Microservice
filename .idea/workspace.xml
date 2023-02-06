@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4c475a5-c929-4d85-a77b-35518389a352" name="Changes" comment="Service discovery (Netflix Eureka)" />
+    <list default="true" id="c4c475a5-c929-4d85-a77b-35518389a352" name="Changes" comment="Service discovery (Netflix Eureka)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/programingtechie/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/programingtechie/orderservice/service/OrderService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,19 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.programingtechie.inventoryservice.InventoryServiceApplication" />
-      <module name="inventory-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.programingtechie.inventoryservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.programingtechie.orderservice.OrderServiceApplication" />
       <module name="order-service" />
@@ -118,10 +109,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.programingtechie.inventoryservice.InventoryServiceApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.programingtechie.inventoryservice.InventoryServiceApplication" />
+      <module name="inventory-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.programingtechie.inventoryservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DiscoveryServerApplication" />
+      <item itemvalue="Application.com.programingtechie.inventoryservice.InventoryServiceApplication" />
+      <item itemvalue="Application.OrderServiceApplication" />
+      <item itemvalue="Application.ProductServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Application.InventoryServiceApplication" />
+        <item itemvalue="Application.com.programingtechie.inventoryservice.InventoryServiceApplication" />
         <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
@@ -164,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675646975826</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Service discovery (Netflix Eureka)">
+      <created>1675647023770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675647023770</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
